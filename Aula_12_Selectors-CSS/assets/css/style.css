@@ -1,0 +1,37 @@
+* {
+  margin: 10px 0;
+  padding: 0;
+}
+h1,
+p {
+  color: purple;
+}
+
+body div section p,
+body div section h1 {
+  color: yellow;
+}
+.heading {
+  color: blue;
+}
+div.main-content h2.heading {
+  font-style: italic;
+  color: green;
+}
+div {
+  color: initial;
+  margin-left: 20px;
+}
+.pai > .filha > .filha {
+  color: red;
+}
+/* irmaos */
+.pai h1 ~ p {
+  color: aqua;
+}
+.pai p + h1 {
+  color: gray;
+}
+[meu-atributo] {
+  color: chocolate;
+}
