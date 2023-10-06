@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid {
+  padding: 15px;
+}
+.grid .col {
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  padding: 15px;
+}
+.grid .col-content {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(182, 182, 253);
+}
+.grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media all and (max-width: 320px) {
+  .grid .col {
+    width: 100%;
+  }
+}
+@media all and (mix-width: 321px) and (max-width: 768px) {
+  .grid .col {
+    width: 50%;
+  }
+}
